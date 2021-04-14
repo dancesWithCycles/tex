@@ -6,6 +6,8 @@
 \usetheme{Warsaw}
 %add the following package to define internal links
 \usepackage{hyperref}
+%add the following package to define colorful tables
+\usepackage{colortbl}
 
 \title[substitute tile for the page bottom]{title}
 \author{author -- author}
@@ -103,7 +105,7 @@ Great !!!
 \end{frame}
 
 %block
-\begin{frame}
+\begin{frame}{block}
 
   \begin{block}{Block title}
     This is a block in blue
@@ -116,6 +118,16 @@ Great !!!
   \begin{exampleblock}{Example-block title}
     This is a block in green
   \end{exampleblock}
+\end{frame}
+
+%table
+\begin{frame}{table}
+\begin{tabular}{lcccc}
+  Class & A & B & C & D \\\hline
+  X     & 1 & 2 & 3 & 4 \pause\\
+  Y     & 3 & 4 & 5 & 6 \pause\\
+  Z     &5&6&7&8
+\end{tabular}
 \end{frame}
 
 \section{Graphics}
