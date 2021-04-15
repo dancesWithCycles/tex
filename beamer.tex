@@ -1,7 +1,13 @@
 %begin preamble
 
 %make document a Beamer presentaion
-\documentclass{Beamer} 
+%text outside frames is ignored this way
+\documentclass[ignorenonframetext]{Beamer}
+
+%use this header if you want a kind of handout that includes all text between frames
+%\documentclass{article}
+%\usepackage{beamerarticle}
+
 %define outer theme (color and background)
 \usetheme{Warsaw}
 %add the following package to use internal links
