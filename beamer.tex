@@ -4,10 +4,12 @@
 \documentclass{Beamer} 
 %define outer theme (color and background)
 \usetheme{Warsaw}
-%add the following package to define internal links
+%add the following package to use internal links
 \usepackage{hyperref}
-%add the following package to define colorful tables
+%add the following package to use tables
 \usepackage{colortbl}
+%add the following package to use code listings
+\usepackage{listings}
 
 \title[substitute tile for the page bottom]{title}
 \author{author -- author}
@@ -141,6 +143,10 @@ Great !!!
 %slides with code should be marked 'fragile'
 \begin{frame}[fragile]{Code}
   Slide for code.
+  \lstinputlisting[
+    firstline=2,
+    lastline=2
+  ]{README.md}
 \end{frame}
 
 \section{Graphics}
