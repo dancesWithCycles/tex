@@ -5,155 +5,20 @@
 \begin{document}
 
 %define title page
-\begin{frame}[label=titlepage]{Title Page}
+\begin{frame}
   \titlepage
 \end{frame}
 
-%outline table of content for the entire presentation
-%use asterisk to indicate that this section shall not be part of the table
-%the name of the section serves as the title of the slide
-\section{Outline}
-\begin{frame}{Outline}
-  \tableofcontents
-\end{frame}
-
-\section{Introduction}
-\begin{frame}{Introduction}
-  \frametitle{frametitle}
-  Title from definition frametitle is overriding any other title.
-\end{frame}
-
-\section{Content}
-
-\begin{frame}
-  \frametitle{bullet points}
+\begin{frame}{Synonyme}
   \begin{itemize}
-  \item item 1
-  \item item 2
-  \item item 3
+  \item<1-> Open Source
+  \item<4-> Open Source Software (OSS)
+  \item<4-> Free Libre Open Source Software (FLOSS)
+  \item<4-> Free Open Source Software (FOSS)
+  \item<2-> Free Software
+  \item<3-> Libre Software
+  \item<5-> \color{blue}Freie Software
   \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Item-by-item long list view}
-  \begin{itemize}[<+->]
-  \item item 1
-  \item item 2
-  \item item 3
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{List item interval and isolated items}
-  \begin{itemize}
-  \item<2-> appears from slide 2 on
-  \item<2-4> appears from slide 2 to slide 4
-  \item<4> appears on slide 4
-  \item<3-> appears from slide 3 on    
-  \end{itemize}
-\end{frame}
-
-%an alternative to \uncover is \only
-\begin{frame}
-  \frametitle{Displaying and hiding text in slides}
-  \uncover<2->
-  {appear from slide 2 on\\}
-  \uncover<3-4>
-  {appears from 3 to slide 4\\}
-  \uncover<4>{appears on slide 4\\}
-  \uncover<3->{appears from slide 3 on\\}
-\end{frame}
-
-%alert
-\begin{frame}{Alert}
-  \alert{alert}
-  Wehere is the new line after a alert call?
-  \alert<1>{This text} \alert<2>{is} \alert<3>{red}
-  \begin{itemize}
-  \item <+-| alert@+> Robert De Niro
-  \item <+-| alert@+> Brian De Palma
-  \item <+-| alert@+> Gerard Depardieu
-  \item <+-| alert@+> Tux
-  \end{itemize}
-\end{frame}
-
-%color
-\begin{frame}{Color}
-\color<2>{green}{Green color\\}
-Great !!!
-\end{frame}
-
-%internal link
-\begin{frame}{Internal Link}
-  \hyperlink{titlepage}{\beamergotobutton{Refer to tile page}}
-\end{frame}
-
-%block
-\begin{frame}{block}
-
-  \begin{block}{Block title}
-    This is a block in blue
-  \end{block}
-
-  \begin{alertblock}{Alert-block title}
-    This is a block in red
-  \end{alertblock}
-
-  \begin{exampleblock}{Example-block title}
-    This is a block in green
-  \end{exampleblock}
-\end{frame}
-
-%table
-\begin{frame}{Table}
-\begin{tabular}{lcccc}
-  Class & A & B & C & D \\\hline
-  X     & 1 & 2 & 3 & 4 \pause\\
-  Y     & 3 & 4 & 5 & 6 \pause\\
-  Z     &5&6&7&8
-\end{tabular}
-\end{frame}
-
-%figure
-\begin{frame}{Figure}
-  \begin{figure}
-    %TODO \includegraphics{avatar}
-  \end{figure}
-\end{frame}
-
-%code
-%slides with code should be marked 'fragile'
-\begin{frame}[fragile]{Code}
-  Slide for code.
-  \lstinputlisting[
-    firstline=2,
-    lastline=2
-  ]{README.md}
-\end{frame}
-\begin{versiona}
-  \textcolor{red}{\textbf{NOTES}
-    \begin{itemize}
-    \item item 1
-    \item item 2
-    \item item 3
-  \end{itemize}}
-\end{versiona}
-
-\section{Graphics}
-
-\begin{frame}
-  \frametitle{PNG}
-  \begin{center}
-    %TODO \includegraphics{avatar}
-  \end{center}
-\end{frame}
-
-\begin{frame}
-  \frametitle{JPG}
-  %alternative alignment to center is left and right
-  \begin{center}
-    %TODO \includegraphics{5075}
-  \end{center}
 \end{frame}
 
 \end{document}
