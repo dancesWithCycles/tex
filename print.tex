@@ -1,15 +1,15 @@
 %make document a Beamer presentaion
 %text outside frames is ignored this way
-\documentclass[ignorenonframetext]{Beamer}
+%\documentclass[ignorenonframetext]{Beamer}
 
 %use this header if you want a kind of handout that includes all text between frames
-%\documentclass{article}
-%\usepackage{beamerarticle}
+\documentclass{article}
+\usepackage{beamerarticle}
 
 %add the following package to use comments
 \usepackage{comment}
-%exclude comments in slides
-\excludecomment{versiona}
+%include comments in notes
+\includecomment{versiona}
 
 %include content
 \input{reference.tex}
