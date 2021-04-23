@@ -1,0 +1,15 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+Die Dede Echtzeit-Karte wird durch ein Konzept ermöglicht, welches aus drei Komponenten besteht.
+
+Eine App für Smartphones mit Internet-Verbindung,
+
+ein Server als Vermittler und
+
+eine Karte zur Ansicht von Echtzeitbewegung von Mobilitätsanbietern.
+
+Der Dede Server vermittelt zwischen App und Karte, damit nicht jedes Verkehrsmittel direkt mit jeder App interagieren muss. Auf diese Weise kann die Karte mit einem Streich sämtliche Verkehrsmittel am Server abfragen. Der Dede Server speichert ausschließlich die aktuellste Position eines Verkehrsmittels. Falls ein Mobilitätsanbieter das Senden der Position beendet, löscht der Dede Server das entsprechende Verkehrsmittel nach einer Minute. Falls kein einziger Mobilitätsanbieter die Dede App aktiv benutzt, ist die Dede Echtzeit-Karte spätestens nach einer Minute komplett leer.
