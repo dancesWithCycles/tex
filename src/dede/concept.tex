@@ -4,7 +4,21 @@
 % * SPDX-License-Identifier: GPL-3.0-or-later
 % */
 
-\begin{frame}{Konzept}
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.1,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
+}
+
+\begin{frame}{Dede Konzept}
+  %alternative alignment to center is left and right
+  \begin{center}
+    \includegraphics[width=\paperwidth]{dede/dede-concept}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Dede Konzept}
   Die Dede Echtzeit-Karte besteht aus drei Komponenten:
   \begin{itemize}
   \item Die Dede-App für Smartphones zeichnet die Bewegungsdaten des Fahrzeugs auf und überträgt sie per Internet an den Dede-Server.
@@ -13,9 +27,4 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Konzept}
-  %alternative alignment to center is left and right
-  \begin{center}
-    \includegraphics{dede/HEFA_crop}
-  \end{center}
-\end{frame}
+\egroup
