@@ -22,10 +22,19 @@
 
 \input{dede/dede-map-sh.tex}
 
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.15,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
+}
+
 \input{dede/dede-philosophy.tex}
 
 \input{dede/concept.tex}
 
 \input{dede/dede-integration.tex}
+
+\egroup
 
 \end{document}
