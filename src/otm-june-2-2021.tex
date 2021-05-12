@@ -21,9 +21,13 @@
 %outline table of content for the entire presentation
 %use asterisk to indicate that this section shall not be part of the table
 %the name of the section serves as the title of the slide
-\begin{frame}{Inhalt}
-  \tableofcontents
-\end{frame}
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Inhalt}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
 
 \section{Über mich}
 
@@ -57,5 +61,11 @@
 \input{dede/dede-integration.tex}
 
 \egroup
+
+\section*{Danke!}
+
+\begin{frame}{Danke!}
+  \center Fragen?
+\end{frame}
 
 \end{document}
