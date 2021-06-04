@@ -1,0 +1,100 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+%make document a Beamer presentaion
+\documentclass{beamer}
+
+%include preamble
+\input{agentur-landmobil-june-09.de/preamble.tex}
+
+%define the document
+\begin{document}
+
+%define title page
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%outline table of content for the entire presentation
+%use asterisk to indicate that this section shall not be part of the table
+%the name of the section serves as the title of the slide
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Inhalt}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\section{Über mich}
+
+\input{agentur-landmobil-june-09.de/about-myself.tex}
+
+\section{Meine Erfahrungen im Öffentlichen Verkehr}
+
+\input{agentur-landmobil-june-09.de/pt-it-infrastruc.tex}
+
+%\input{otm-june-2-2021/on-board_computer.tex}
+
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.8,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede-map-sh-empty}};
+}
+
+%\input{dede/germany-empty.tex}
+
+\egroup
+
+%\input{otm-june-2-2021/germany-empty-reason.tex}
+
+%\input{otm-june-2-2021/transport-companies.tex}
+
+%\input{otm-june-2-2021/transport-vehicles.tex}
+
+%\input{otm-june-2-2021/on-board_computer_assumptions.tex}
+
+%\input{otm-june-2-2021/on-board_computer_costs.tex}
+
+%\input{otm-june-2-2021/bus_dede_costs.tex}
+
+\section{Die Dede Echtzeit-Karte}
+
+%\input{dede/dede-map-sh.tex}
+
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.1,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
+}
+
+%\input{dede/dede-philosophy.tex}
+
+%\input{dede/concept.tex}
+
+%\input{dede/dede-integration.tex}
+
+\egroup
+
+\section*{Danke!}
+
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.5,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
+}
+
+\begin{frame}{Danke!}
+  \center {\huge\textbf{Dede Echtzeit-Karte www.dedriver.org}}
+  \center {\Huge\textbf{Fragen?}}
+\end{frame}
+
+\egroup
+
+\end{document}
