@@ -1,0 +1,32 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+\begin{frame}[fragile]
+\frametitle{Dede Server: Datenbankmodel}
+\begin{lstlisting}
+const vehicleSchema=new Schema({
+    uuid:{type:String,required:true,unique:true},
+    lat:{type:Number,min:-90,max:90},
+    lon:{type:Number,min:-180,max:180},
+    ts:{type:Number,min:0},
+    alias:String,
+    vehicle:String,
+    label:String,
+    licensePlate:String,
+    tripId:String,
+    routeId:String,
+    directionId:String,
+    startTime:String,
+    startDame:String
+})
+\end{lstlisting}
+\end{frame}
+
+%\begin{frame}{Dede Server: Datenbankmodel}[fragile]
+%  \begin{lstlisting}
+%  \begin{lstlisting}[caption=Datenbankmodel]
+%  \end{lstlisting}
+%\end{frame}
