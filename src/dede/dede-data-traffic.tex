@@ -11,12 +11,12 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Datenaufkommen über Mobilfunk}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTP}
   \includegraphics[width=0.88\paperwidth]{dede/dede-obc-wireshark-http-post}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Datenaufkommen über Mobilfunk}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTP}
   \begin{itemize}
   \item Pro Positionserfassung erstellt der Dede Bordrechner ein Datenobjekt in einer Größe von 150 Byte.
   \item Der Dede Bordrechner sendet eine HTTP POST-Anfrage in einer Größe von 401 Byte.
@@ -26,7 +26,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Datenaufkommen über Mobilfunk}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTP}
   Annahme: Der Dede Bordrechner erfasst die Position einmal pro Minute.
   \begin{itemize}
   \item Datenaufkommen pro Minute: 1239 Byte/ 1,24 KByte
@@ -36,4 +36,32 @@
   \item Datenaufkommen pro Jahr: 651,22 MByte
   \end{itemize}
   \includegraphics[width=0.5\paperwidth]{dede/dede-obc-wireshark-http-post}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTPS}
+  \includegraphics[width=0.80\paperwidth]{dede/dede-obc-wireshark-https-post}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTPS}
+  \begin{itemize}
+  \item Pro Positionserfassung erstellt der Dede Bordrechner ein Datenobjekt in einer Größe von 150 Byte.
+  \item Der Dede Bordrechner sendet eine HTTPS POST-Anfrage in einer Größe von 433 Byte.
+  \item Es resultiert ein Datenaufkommen von 1301 Byte pro Positionserfassung.
+  \end{itemize}
+  \includegraphics[width=0.5\paperwidth]{dede/dede-obc-wireshark-https-post}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Datenaufkommen über Mobilfunk: HTTPS}
+  Annahme: Der Dede Bordrechner erfasst die Position einmal pro Minute.
+  \begin{itemize}
+  \item Datenaufkommen pro Minute: 1301 Byte/ 1,3 KByte
+  \item Datenaufkommen pro Stunde: 78,06 KByte
+  \item Datenaufkommen pro Tag: 1,87 MByte
+  \item Datenaufkommen pro Monat: 58,08 MByte
+  \item Datenaufkommen pro Jahr: 683,81 MByte
+  \end{itemize}
+  \includegraphics[width=0.5\paperwidth]{dede/dede-obc-wireshark-https-post}
 \end{frame}
