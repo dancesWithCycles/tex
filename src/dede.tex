@@ -18,6 +18,17 @@
   \titlepage
 \end{frame}
 
+%outline table of content for the entire presentation
+%use asterisk to indicate that this section shall not be part of the table
+%the name of the section serves as the title of the slide
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Inhalt}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
 \section{Ueber Dede}
 
 \input{dede/dede-map-sh.tex}
