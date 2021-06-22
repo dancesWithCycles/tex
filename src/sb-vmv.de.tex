@@ -8,7 +8,7 @@
 \documentclass{beamer}
 
 %include preamble
-\input{otm-june-2-2021/preamble.tex}
+\input{vmv.de/preamble.tex}
 
 %define the document
 \begin{document}
@@ -35,30 +35,9 @@
 
 \section{Meine Erfahrungen im Öffentlichen Verkehr}
 
-\input{public-transport/pis-overview-with-hub.tex}
-
-\input{public-transport/on-board-computer.tex}
-
-\bgroup
-
-\usebackgroundtemplate{%
-\tikz\node[opacity=0.8,inner sep=0] {
-   \includegraphics[width=\paperwidth]{dede/dede-map-sh-empty}};
-}
-
-\input{dede/germany-empty.tex}
-
-\egroup
+\input{public-transport/pis-overview.tex}
 
 \input{public-transport/it-challenges.tex}
-
-%\input{otm-june-2-2021/transport-companies.tex}
-
-%\input{otm-june-2-2021/transport-vehicles.tex}
-
-%\input{otm-june-2-2021/on-board_computer_assumptions.tex}
-
-%\input{otm-june-2-2021/on-board_computer_costs.tex}
 
 \section{Dede Echtzeit-Karte}
 
@@ -67,7 +46,7 @@
 \bgroup
 
 \usebackgroundtemplate{%
-\tikz\node[opacity=0.1,inner sep=0] {
+\tikz\node[opacity=0.15,inner sep=0] {
    \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
 }
 
@@ -75,22 +54,17 @@
 
 \input{dede/dede-concept.tex}
 
+\input{dede/dede-on-board-computer.tex}
+
+\input{dede/dede-server.tex}
+
+\input{dede/dede-data-base-model.tex}
+
+\input{dede/dede-map.tex}
+
 \input{dede/dede-integration.tex}
 
-\egroup
-
-\section*{Danke!}
-
-\bgroup
-
-\usebackgroundtemplate{%
-\tikz\node[opacity=0.5,inner sep=0] {
-   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
-}
-
-\begin{frame}{Danke!}
-  \center {\Huge\textbf{Fragen?}}
-\end{frame}
+\input{dede/dede-data-traffic.tex}
 
 \egroup
 
