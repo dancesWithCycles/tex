@@ -1,0 +1,78 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+%make document a Beamer presentaion
+\documentclass{beamer}
+
+%include preamble
+\input{vmv.de/preamble.tex}
+
+%define the document
+\begin{document}
+
+%define title page
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%outline table of content for the entire presentation
+%use asterisk to indicate that this section shall not be part of the table
+%the name of the section serves as the title of the slide
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Inhalt}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\section{Über mich}
+
+\input{about/about-myself.tex}
+
+\section{Meine Erfahrungen im Öffentlichen Verkehr}
+
+\input{public-transport/pis-overview.tex}
+
+\input{public-transport/it-challenges.tex}
+
+\section{Dede Echtzeit-Karte}
+
+\input{dede/dede-map-sh.tex}
+
+\bgroup
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.10,inner sep=0] {
+   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
+}
+
+\input{dede/dede-philosophy.tex}
+
+\input{dede/dede-concept.tex}
+
+\input{dede/dede-on-board-computer.tex}
+
+\input{public-transport/on-board-computer.tex}
+
+\input{dede/dede-server.tex}
+
+%\input{dede/dede-data-base-model.tex}
+
+\input{dede/dede-map.tex}
+
+\input{dede/dede-integration.tex}
+
+%\input{dede/dede-data-traffic.tex}
+
+\begin{frame}{Danke!}
+  \center {\huge\textbf{Dede Echtzeit-Karte www.dedriver.org}}
+  \center {\Huge\textbf{Fragen?}}
+\end{frame}
+
+\egroup
+
+\end{document}
