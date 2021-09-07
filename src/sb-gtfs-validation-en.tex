@@ -1,0 +1,45 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+%make document a Beamer presentaion
+\documentclass{beamer}
+
+%include preamble
+\input{gtfs-validation/preamble.tex}
+
+%define the document
+\begin{document}
+
+%define title page
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%outline table of content for the entire presentation
+%use asterisk to indicate that this section shall not be part of the table
+%the name of the section serves as the title of the slide
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Inhalt}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\section{gtfsvtor}
+
+\input{gtfs-validation/gtfsvtor.tex}
+
+\section{gtfs-validator}
+
+\input{gtfs-validation/gtfs-validator.tex}
+
+\begin{frame}{Cheers!}
+  \center {\Huge\textbf{Questions?}}
+\end{frame}
+
+\end{document}
+k

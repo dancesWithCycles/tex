@@ -1,0 +1,51 @@
+%/*
+% * SPDX-FileCopyrightText: 2021 Stefan Begerad <stefan@begerad.de>
+% *
+% * SPDX-License-Identifier: GPL-3.0-or-later
+% */
+
+%define outer theme (color and background)
+%\usetheme{default}
+%\usetheme{Goettingen}
+%\usetheme{Darmstadt}
+%\usetheme{Copenhagen}
+\usetheme{Boadilla}
+%\usetheme{Berlin}
+%\usetheme{Berkeley}
+%\usetheme{Bergen}
+%\usetheme{Antibes}
+%\usetheme{AnnArbor}
+%\usetheme{Warsaw}
+%\usetheme{Szeged}
+
+%define color of theme
+%\usecolortheme{default}
+%\usecolortheme{beaver}
+\usecolortheme{seahorse}
+
+%add the following package to use links
+%Define hyperref as last package, because it modifies other instructions!
+\usepackage{hyperref}
+
+%add the following package to adjust the background
+\usebackgroundtemplate
+
+%add the following packge to make background transparent
+\usepackage{tikz}
+
+%using listings to highlight code
+\usepackage{listings}
+
+%add the following package to use tables
+\usepackage{colortbl}
+
+\title[GTFS Validation]%optional
+{Validation of Data in the GTFS Format}
+
+%\subtitle{}
+
+\author[Begerad]%(optional, for multiple authors)
+{Stefan~Begerad}
+
+\date[SIB, 2021]%(optional)
+{Software Ingenieur Begerad, 2021}
