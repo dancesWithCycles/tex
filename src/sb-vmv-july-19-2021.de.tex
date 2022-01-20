@@ -8,7 +8,18 @@
 \documentclass{beamer}
 
 %include preamble
-\input{vmv.de/preamble.tex}
+\input{dede/preamble.tex}
+
+\title[Dede]%optional
+{Dede Echtzeit-Karte}
+
+\subtitle{Offen, Unabhängig, Universell}
+
+\author[Begerad]%(optional, for multiple authors)
+{Stefan~Begerad}
+
+\date[VMV, 19. Juli 2021]%(optional)
+{Verkehrsgesellschaft Mecklenburg-Vorpommern mbH, 19. Juli 2021}
 
 %define the document
 \begin{document}
@@ -41,38 +52,6 @@
 
 \section{Dede Echtzeit-Karte}
 
-\input{dede/dede-map-sh.tex}
-
-\bgroup
-
-\usebackgroundtemplate{%
-\tikz\node[opacity=0.15,inner sep=0] {
-   \includegraphics[width=\paperwidth]{dede/dede_real-time_map_crop}};
-}
-
-\input{dede/dede-philosophy.tex}
-
-\input{dede/dede-concept.tex}
-
-\input{dede/dede-on-board-computer.tex}
-
-\input{public-transport/on-board-computer.tex}
-
-\input{dede/dede-server.tex}
-
-%\input{dede/dede-data-base-model.tex}
-
-\input{dede/dede-map.tex}
-
-\input{dede/dede-integration.tex}
-
-%\input{dede/dede-data-traffic.tex}
-
-\begin{frame}{Danke!}
-  \center {\huge\textbf{Dede Echtzeit-Karte www.dedriver.org}}
-  \center {\Huge\textbf{Fragen?}}
-\end{frame}
-
-\egroup
+\input{dede/dede-vmv.tex}
 
 \end{document}
